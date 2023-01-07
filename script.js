@@ -24,6 +24,7 @@ function changeBackground(){
     // console.log(color1.value);
     bodyBg.style.background = `linear-gradient(to right, ${color1.value} , ${color2.value})`;
     css.textContent = bodyBg.style.background;
+    colorGenBtn.style.background = bodyBg.style.background;
 }
 
 color1.addEventListener("input", changeBackground);
